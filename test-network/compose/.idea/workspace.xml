@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39466e76-7b2c-4369-8dee-27d175e73481" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../chain-front/e-voting/src/app/voter/register/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/chaincode/smartcontract.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/chaincode/smartcontract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/bypass.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/bypasssafe.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/dump.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/format.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/davecgh/go-spew/spew/spew.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/pmezard/go-difflib/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/pmezard/go-difflib/difflib/difflib.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertion_compare.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertion_format.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertion_format.go.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertion_forward.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertion_forward.go.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertion_order.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/assertions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/forward_assertions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/assert/http_assertions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/forward_requirements.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/require.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/require.go.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/require_forward.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/require_forward.go.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/github.com/stretchr/testify/require/requirements.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../asset-transfer-basic/chaincode-go/vendor/modules.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose-test-net.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-test-net.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2pnMjuoao2DaJGDwEKWMtFyCcRs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker/docker-compose-test-net.yaml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker/docker-compose-test-net.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker/docker-compose-test-net.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker/docker-compose-test-net.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39466e76-7b2c-4369-8dee-27d175e73481" name="Changes" comment="" />
+      <created>1733397529919</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733397529919</updated>
+      <workItem from="1733397532559" duration="53000" />
+      <workItem from="1736445228442" duration="802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

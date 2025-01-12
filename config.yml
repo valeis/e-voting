@@ -1,0 +1,12 @@
+postgres:
+  user: admin
+  password: pass
+  host: localhost
+  port: 5440
+  db_name: trace-db
+
+redis:
+  host: localhost
+  port: :6379
+  password: redispass
+  db: 0

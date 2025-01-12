@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: e-voting
+    image: postgres:16.0
+    networks:
+      - e-voting
+    environment:
+      POSTGRES_DB: e-voting
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: pass
+      PGDATA: /data/e-voting
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - postgres-db:/data/postgres
+    ports:
+      - "5440:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_ready", "-d", "db_prod" ]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 60s
+  redis:
+    image: redis:7.0.13
+    networks:
+      - e-voting
+    container_name: e-voting-redis-db
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+volumes:
+  postgres-db:
+    driver: local
+  redis-data:
+    driver: local
+networks:
+  e-voting:
+    driver: bridge
