@@ -5,7 +5,7 @@ import {useQuery} from "@tanstack/react-query";
 import axios from "axios";
 import {ProgressSpinner} from "primereact/progressspinner";
 import {Card} from "primereact/card";
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image"
 import {Button} from "primereact/button";
 
@@ -27,6 +27,9 @@ interface IGetCandidatesResponse {
 }
 
 export default function CandidatesPage() {
+    const [isVoting, setIsVoting] = useState(false);
+    const [errorVoting, setErrorVoting] = useState('');
+
     const params = useParams();
     const electionId = params.electionId;
     const router = useRouter();
@@ -40,6 +43,29 @@ export default function CandidatesPage() {
             return response.data;
         },
     });
+
+    const handleVote = async (candidate: Candidate) => {
+        const voterIDNP = localStorage.getItem('voterIDNP');
+
+        if (!voterIDNP) {
+            setErrorVoting('Voter IDNP not found. Please register first.');
+            return;
+        }
+
+        setIsVoting(true);
+        setErrorVoting('');
+
+        try {
+            const url = `http://localhost:3000/invoke?channelid=mychannel&chaincodeid=basic&function=CastVote&args=${voterIDNP}&args=${candidate.age}${candidate.party}`
+
+            await axios.post(url);
+        } catch (error) {
+            setErrorVoting('Failed to cast vote. Please try again later.');
+            console.error('Voting error:',error);
+        } finally {
+            setIsVoting(false);
+        }
+    }
 
     if (isLoading) {
         return (
@@ -126,6 +152,20 @@ export default function CandidatesPage() {
                                         {candidate.party}
                                     </p>
                                 </div>
+                            </div>
+                            { errorVoting && (
+                                <div className="text-red-500 text-sm text-center">
+                                    {error}
+                                </div>
+                            )}
+                            <div className="flex justify-center mt-4">
+                                <Button
+                                    icon="pi pi-check-circle"
+                                    onClick={()=> handleVote(candidate)}
+                                    disabled={isVoting}
+                                    className={`w-full justify-content-center  ${isVoting ? 'opacity-50' : ''}`}
+                                    label={isVoting ? 'Voting...' : 'Vote'}
+                                />
                             </div>
                         </div>
                     </Card>

@@ -25,6 +25,12 @@ interface Election {
     title: string;
     numberOfCandidates: string;
 }
+interface RegisterCandidateParams {
+    channelid: string;
+    chaincodeid: string;
+    function: string;
+    args: string[];
+}
 
 export default function CandidateRegistrationPage({ params }: { params: Promise<{ electionId: string }> }) {
     const router = useRouter();
@@ -93,6 +99,22 @@ export default function CandidateRegistrationPage({ params }: { params: Promise<
                     'Content-Type': 'application/json',
                 } as AxiosRequestHeaders
             });
+            for (const candidate of candidates) {
+                // Combine age and party for first argument
+                const firstArg = `${candidate.age}${candidate.party}`;
+                // Combine firstName and lastName for second argument
+                const secondArg = `${candidate.firstName}${candidate.lastName}`;
+
+                const url = new URL('http://localhost:3000/invoke');
+                url.searchParams.append('channelid', 'mychannel');
+                url.searchParams.append('chaincodeid', 'basic');
+                url.searchParams.append('function', 'RegisterCandidate');
+                url.searchParams.append('args', firstArg);
+                url.searchParams.append('args', secondArg);
+                url.searchParams.append('args', resolvedParams.electionId);
+
+                await axios.post(url.toString());
+            }
             router.push('/election');
         } catch (error) {
             console.error('Error registering candidates:', error);

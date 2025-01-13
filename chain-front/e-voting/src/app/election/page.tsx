@@ -85,13 +85,20 @@ export default function ElectionPage() {
 
         if (candidates && candidates.length > 0) {
             return (
-                <Button
-                    label="View candidates"
-                    className="w-full"
-                    type="button"
-                    raised
-                    onClick={() => router.push(`/election/candidates/${electionId}`)}
-                />
+                <div className="flex flex-wrap gap-2 justify-content-center">
+                    <Button
+                        label="View candidates"
+                        type="button"
+                        raised
+                        onClick={() => router.push(`/election/candidates/${electionId}`)}
+                    />
+                    <Button
+                        label="See result"
+                        type="button"
+                        raised
+                        onClick={() => router.push(`/election/results/${electionId}`)}
+                    />
+                </div>
             )
         }
 

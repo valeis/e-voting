@@ -59,11 +59,8 @@ export default function VoterRegistrationForm() {
 
             const response = await axios.post(url);
 
-
-            if (response.data.toString() !== 'voter registered successfully') {
-                throw new Error('Registration failed');
-            }
-
+            localStorage.setItem('voterIDNP', formData.idnp);
+            localStorage.setItem('voterFullName', formData.fullName);
             setSuccess(true);
             setTimeout(()=> router.push('/election'), 5000);
             setFormData({ idnp: '', fullName: ''});
